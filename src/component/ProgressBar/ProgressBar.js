@@ -2,9 +2,10 @@ import React from "react";
 import "./ProgressBar.style.scss";
 
 export default class ProgressBar extends React.Component {
+
   render() {
     return (
-      <>
+      <div block="ProgressBar">
         <div id="container">
           <div id="upper"></div>
           <div id="line">
@@ -14,7 +15,6 @@ export default class ProgressBar extends React.Component {
                   <span className="circle-number">1</span>
                 </span>
               </span>
-
               <span className="circle-label">shipping</span>
             </span>
             <span id="review-container" className="circle-container">
@@ -28,7 +28,7 @@ export default class ProgressBar extends React.Component {
           </div>
           <div id="lower"></div>
         </div>
-      </>
+      </div>
     );
   }
 }
